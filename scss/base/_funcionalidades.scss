@@ -1,0 +1,19 @@
+$color-principal: black;
+
+$colores: rgba(87, 84, 84, 0.76), red, white
+
+%boton{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    background-color: black;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+@mixin flex ($flex, $justify, $aling){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $aling;
+}

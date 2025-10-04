@@ -1,0 +1,19 @@
+{
+  "name": "preentrega1_maldonado",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Hola 👋, soy Gonzalo Maldonado</h1>\r <h3 align=\"center\">PreEntrega</h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GonzaMaldo-bot/PreEntrega1_MALDONADO.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GonzaMaldo-bot/PreEntrega1_MALDONADO/issues"
+  },
+  "homepage": "https://github.com/GonzaMaldo-bot/PreEntrega1_MALDONADO#readme"
+}

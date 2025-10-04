@@ -1,0 +1,261 @@
+.hero{
+    display: flex;
+    justify-content: space-around;
+    div{
+    width: 50%;
+        h2{
+        font-size: 40px;
+        font-weight: 900;
+        }
+        p{
+
+        }
+    }
+    img{
+
+    }
+}
+
+.tragos-del-momento{
+    text-align: center;
+    width: 100%;
+    heigh: 400px;
+    background-image: url(../img/barras_tematicas.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 5%;
+    border: 2px solid black;
+    h2{
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    background-color: black;
+    margin: 10px;
+    padding: 10px;
+    }
+    .destacados-contenedor{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        @include flex (flex, space-around, center)
+        div{
+            width: 200px;
+            height: 250px;
+            margin: 10px;
+            border-radius: 10px;
+            border: 1px solid black;
+            background-color: rgba(138, 133, 133, 0.651);
+            h3{
+
+            }
+            a{
+
+            }
+            img{
+
+            }
+        }
+        div{
+            width: 200px;
+            height: 250px;
+            margin: 10px;
+            border-radius: 10px;
+            border: 1px solid black;
+            background-color: rgba(138, 133, 133, 0.651);
+            h3{
+
+            }
+            a{
+
+            }
+            img{
+                
+            }
+        }
+        div{
+            width: 200px;
+            height: 250px;
+            margin: 10px;
+            border-radius: 10px;
+            border: 1px solid black;
+            background-color: rgba(138, 133, 133, 0.651);
+            h3{
+
+            }
+            a{
+
+            }
+            img{
+                
+            }
+        }
+    }
+}
+
+.video-{
+    h2{
+
+    }
+    iframe{
+        border: 3px solid black;
+        width: 100%;
+    }
+    p{
+        color: rgba(68, 67, 67, 0.842);
+        font-size: 15px;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+}
+
+.boton-random{
+    padding: 200px;
+    display: flex;
+    justify-content: center;
+    a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    background-color: black;
+    padding: 20px;
+    border-radius: 20px;
+    @extend %boton;
+        &:hover{
+        background-color: nth($colores, 3);
+        color: black;
+        border: solid 3px black; 
+        }
+    }
+}
+
+.grib-galeria{
+    margin: 5px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 350px;
+    gap: 15px;
+    .grib-item{
+        text-align: center;
+        border:  solid 2px black;
+        border-radius: 10px;
+        position: relative;
+            &:hover{
+                border:  solid 2px nth($colores, 2);
+            }
+        img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        }
+        h3{
+        position: absolute;
+        bottom: 0;
+        background-color: nth($colores, 1);
+        border-radius: 5px;
+        padding: 5px;
+        border:  solid 2px black;
+        }
+    }
+}
+
+.cajas{
+    h2{
+
+    }
+    p{
+
+    }
+    .caja{
+        display: flex;
+        justify-content: space-between;
+        gap: 100px;
+        .texto_vaso{
+        max-width: 600px;
+        text-align: center;
+        margin: 0 auto;
+            h3{
+
+            }
+            p{
+
+            }
+        }
+        img{
+        width: 200px;
+        height: auto;
+        }
+    }
+}
+
+.herramientas1{
+    div{
+        h2{
+        font-size: 40px;
+        font-weight: 900;
+        }
+        p{
+
+        }
+    }
+}
+.herramientas2{
+    margin: 5px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 350px;
+    gap: 15px; 
+    position: relative;
+    .herramientas3{
+        text-align: center;
+        border:  solid 2px $color-principal;
+        border-radius: 10px;
+        overflow: hidden;
+            &:hover{
+                border:  solid 2px gray;
+            }
+        h3{
+        bottom: 0;
+        background-color: rgba(87, 84, 84, 0.76);
+        border-radius: 5px;
+        padding: 5px;
+        border:  solid 2px $color-principal;
+        }
+        img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        }
+    }
+}
+
+.metodos_titulo{
+    h2{
+
+    }
+    p{
+
+    }
+}
+.metodos_tipos{
+    div{
+        text-align: center;
+        h3{
+
+        }
+        p{
+
+        }
+        img{
+        border: 3px solid black;
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        }
+    }
+}

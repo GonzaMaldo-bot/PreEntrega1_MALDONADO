@@ -1,0 +1,24 @@
+@media screen and (max-width:950px){
+        /*header{
+            flex-direction: column;
+        }*/
+}
+    
+@media screen and (max-width:870px){
+    .hero img{
+    display: none;
+    }
+    .hero div{
+    width: 100%;
+    text-align: center;
+    }
+    .grid-galeria{
+    grid-template-columns: repeat(3, 1fr); 
+    }
+}  
+        
+@media screen and (max-width:490px){
+    .grid-galeria{
+    grid-template-columns: repeat(2, 1fr);
+    }
+}

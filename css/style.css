@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
     body {
-         font-family: "Oswald", sans-serif;
+        font-family: "Oswald", sans-serif;
+        background: #424b4f;
+        background: linear-gradient(90deg, rgba(66, 75, 79, 0.98) 0%, rgba(109, 138, 120, 0.89) 55%, rgba(117, 113, 111, 0.41) 100%);
     }
 
     
@@ -9,6 +11,8 @@
         display: flex;
         justify-content: space-around;
     }
+
+    
 
     .hero div h2{
         font-size: 40px;
@@ -33,7 +37,7 @@
     .tragos-del-momento{
         text-align: center;
         width: 100%;
-        height 500px;
+        height: 400px;
         background-image: url(../img/barras_tematicas.jpg);
         background-position: center;
         background-repeat: no-repeat;
@@ -49,6 +53,25 @@
         align-items: center;
         flex-wrap: wrap;
     }
+
+    .destacados-contenedor div:hover{
+        animation: transformacion 3s infinite;
+    }
+
+     @keyframes transformacion{
+        0%{
+            border-radius: 0 0 0 0;
+            background-color: rgba(138, 133, 133, 0.651);
+        }
+        50%{
+            border-radius: 0 0 50% 50%;
+            background-color: rgba(138, 133, 133, 0.815);
+        }
+        100%{
+            border-radius: 0 0 50% 50%;
+            background-color: rgb(138, 133, 133);
+        }
+     }
 
     .tragos-del-momento .destacados-contenedor div{
         width: 200px;
@@ -67,6 +90,24 @@
         background-color: black;
         margin: 10px;
         padding: 10px;
+        animation-name: slidein;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 1s;
+        animation-iteration-count: 1;
+        animation: ;
+    }
+
+    @keyframes slidein {
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+    to{
+        margin-left: 0;
+        width: 100%;
+    }
+
     }
 
     .video- iframe{
@@ -104,12 +145,14 @@
         background-color: black;
         padding: 20px;
         border-radius: 20px;
+        transition: 1s;
     }
 
     .boton-random a:hover{
         background-color: white;
         color: black;
         border: solid 3px black;
+        transform: scale(1.5);
     }
 
     .grid-galeria{
@@ -135,6 +178,7 @@
 
     .grid-item{
         position: relative;
+        transition-duration: 2s;
     }
 
     .grid-item:hover{
@@ -152,6 +196,90 @@
 
     .cajas div:nth-child(even){
         background-color: bisque;
+    }
+
+    .caja {
+        display: flex;
+        justify-content: space-between;
+        gap: 100px;
+        border:  solid 1px rgba(56, 55, 55, 0.479);
+    }
+
+    .caja p{
+        transition: 2s;
+    }
+
+    .caja p:hover{
+        transform: scale(1.5);
+        background-color: #424b4f;
+        color: whitesmoke;
+    }
+
+    .caja img{
+        width: 200px;
+        height: auto;
+        transition: 3.5s;
+    }
+
+    .caja img:hover{
+        transform: rotateY(360deg);
+    } 
+
+    .texto_vaso{
+        max-width: 600px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .herramientas1 div h2{
+        font-size: 40px;
+        font-weight: 900;
+    }
+
+    .herramientas2 div img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .herramientas2{
+        margin: 5px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-auto-rows: 350px;
+        gap: 15px; 
+        position: relative;
+    }  
+    
+    .herramientas3{
+        text-align: center;
+        border:  solid 2px black;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .herramientas3 h3{  
+        bottom: 0;
+        background-color: rgba(87, 84, 84, 0.76);
+        border-radius: 5px;
+        padding: 5px;
+        border:  solid 2px black;
+    }
+
+    .herramientas3:hover{
+        border:  solid 2px gray;
+    }
+
+    .metodos_tipos img{
+        border: 3px solid black;
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .metodos_tipos div{
+        text-align: center;
     }
 
     @media screen and (max-width:950px){
